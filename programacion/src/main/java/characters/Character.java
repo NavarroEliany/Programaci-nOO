@@ -1,13 +1,58 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package characters;
 
-/**
- *
- * @author SCIS2PC23
- */
+
 public class Character {
-    
+     String name;
+        String occupation;
+        int age;
+        String phrase;
+
+        public Character(String name, String occupation, int age, String phrase) {
+            this.name = name;
+            this.occupation = occupation;
+            this.age = age;
+            this.phrase = phrase;
+        }
+        
+        public Character(){
+        }
+        
+       public void greeting(){
+           System.out.println(this.phrase);  
+           
+           
+       } 
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getOccupation() {
+        return occupation;
+    }
+
+    public void setOccupation(String occupation) {
+        this.occupation = occupation;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public String getPhrase() {
+        return phrase;
+    }
+
+    public void setPhrase(String phrase) {
+        this.phrase = phrase;
+    }
 }

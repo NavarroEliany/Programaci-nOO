@@ -1,16 +1,22 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
 
 package com.mycompany.programacion;
 
-/**
- *
- * @author SCIS2PC23
- */
+import characters.Character;
+
+
 public class Programacion {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+      Character homero = new Character("Homero","Inspector de seguridad",33,"A la grande le puse cuca");
+     homero.greeting();
+        System.out.println(homero.getAge());
+     
+     Character bart = new Character();
+     bart.setPhrase("Ayy caramba!!");
+     bart.greeting();
+     
+     
+    
+     
     }
 }
